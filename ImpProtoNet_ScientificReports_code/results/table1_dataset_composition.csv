@@ -1,0 +1,23 @@
+class_id,disease,category,images,patients,male,female,age_le30,age_31_50,age_gt50
+K00,Mature adipose tissue,Ben,26,22,14,8,0,2,20
+K01,Capillary hemangioma,Ben,26,23,15,8,6,7,10
+K02,Sebaceous adenoma,Ben,74,31,16,15,0,6,25
+K03,Sebaceous carcinoma,Mal,139,55,22,33,0,10,45
+K04,Meibomian gland carcinoma,Mal,26,25,6,19,1,8,16
+K05,Fibroma,Ben,36,28,10,18,8,3,17
+K06,Pterygium,Ben,45,29,12,17,0,4,25
+K07,Granuloma,Ben,557,411,163,248,109,185,117
+K08,Seborrheic keratosis,Ben,226,138,56,82,7,27,104
+K09,Melanocytic nevus,Ben,592,389,100,289,77,177,135
+K10,Squamous cell carcinoma,Mal,30,22,10,12,1,7,14
+K11,Xanthogranuloma,Ben,22,16,6,10,9,4,3
+K12,Basal cell carcinoma,Mal,310,143,65,78,9,14,120
+K13,Chronic inflammation,Ben,150,110,48,62,29,41,40
+K14,Verrucous hyperplasia,Ben,85,54,20,34,5,16,33
+K15,Hemangioma,Ben,39,30,15,15,1,14,15
+K16,Xanthoma,Ben,27,17,4,13,1,6,10
+K17,Cyst,Ben,536,410,206,204,49,123,238
+K18,Malignant melanoma,Mal,105,32,13,19,0,11,21
+K19,Hidrocystoma,Ben,63,46,21,25,3,13,30
+K20,Papillary epithelial hyperplasia,Ben,130,74,43,31,13,20,41
+K21,Pilomatrixoma,Ben,50,39,15,24,25,6,8

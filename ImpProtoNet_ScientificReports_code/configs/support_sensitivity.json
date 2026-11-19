@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "B",
+  "partitions": ["validation", "test"],
+  "class_combination_policy": "all_combinations",
+  "query_panels_per_combination": 1,
+  "query_patients_per_class": 5,
+  "support_shots": [3, 5],
+  "maximum_support_resamples": 100,
+  "pilot_prefixes": [20, 30, 40, 50, 75, 100],
+  "sampling": {
+    "patient_unit": true,
+    "fixed_query_patient_and_image": true,
+    "fixed_image_per_patient_across_resamples": true,
+    "query_support_patient_disjoint": true,
+    "nested_support_sets": true,
+    "unique_complete_5shot_support_sets": true,
+    "unique_nested_3shot_support_sets": true
+  },
+  "pilot": {
+    "split_id": "split_01",
+    "model_ids": ["M0", "M3", "M5"],
+    "absolute_change_threshold": 0.01,
+    "consecutive_stable_prefixes": 2,
+    "fallback_resamples": 100
+  },
+  "master_seed": 20261004
+}

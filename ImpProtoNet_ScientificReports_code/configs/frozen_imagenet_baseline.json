@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "model_id": "M1",
+  "model_name": "FrozenImageNetPrototypeBaseline",
+  "backbone": "resnet18_imagenet1k_v1",
+  "use_eyelid_training_data": false,
+  "freeze_backbone": true,
+  "way": 3,
+  "support_shots": [3, 5],
+  "prototype": "arithmetic_mean",
+  "distance": "squared_euclidean",
+  "l2_normalize_features": false,
+  "temperature": 1.0
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "way": 3,
+  "support_shots": [3, 5],
+  "query_patients_per_class": 5,
+  "episode_counts": {
+    "train": 20000,
+    "validation": 600,
+    "test": 1000
+  },
+  "master_seed": 20261004,
+  "sampling": {
+    "class_sampling": "balanced_combinations",
+    "patient_sampling": "uniform_without_replacement",
+    "image_sampling": "one_uniform_image_per_selected_patient",
+    "nested_support_sets": true
+  },
+  "training_control": {
+    "validation_interval_episodes": 500,
+    "minimum_train_episodes": 5000,
+    "early_stopping_patience_checks": 8,
+    "maximum_train_episodes": 20000
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "source_config": "configs/classes.json",
+  "purpose": "English disease-label terminology for manuscript tables and supplementary material",
+  "classes": [
+    {
+      "class_id": "K00",
+      "class_name_zh": "分化成熟的脂肪组织",
+      "class_name_en": "Mature adipose tissue",
+      "status": "source_faithful_translation",
+      "note": "This is a histopathological description rather than a specific diagnosis; do not relabel it as lipoma without checking the original record."
+    },
+    {
+      "class_id": "K01",
+      "class_name_zh": "毛细血管瘤",
+      "class_name_en": "Capillary hemangioma",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68018324"
+    },
+    {
+      "class_id": "K02",
+      "class_name_zh": "皮脂腺瘤",
+      "class_name_en": "Sebaceous adenoma",
+      "status": "standard_term_verified",
+      "authority_url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C214977"
+    },
+    {
+      "class_id": "K03",
+      "class_name_zh": "皮脂腺癌",
+      "class_name_en": "Sebaceous carcinoma",
+      "status": "standard_term_verified",
+      "authority_url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C134831"
+    },
+    {
+      "class_id": "K04",
+      "class_name_zh": "睑板腺癌",
+      "class_name_en": "Meibomian gland carcinoma",
+      "status": "standard_term_verified",
+      "note": "A clinician confirmed that this is a separate dataset category from K03; the manuscript should list the two categories separately without additional interpretation.",
+      "authority_url": "https://pubmed.ncbi.nlm.nih.gov/29696467/"
+    },
+    {
+      "class_id": "K05",
+      "class_name_zh": "纤维瘤",
+      "class_name_en": "Fibroma",
+      "status": "standard_term_verified"
+    },
+    {
+      "class_id": "K06",
+      "class_name_zh": "翼状胬肉",
+      "class_name_en": "Pterygium",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68011625"
+    },
+    {
+      "class_id": "K07",
+      "class_name_zh": "肉芽肿",
+      "class_name_en": "Granuloma",
+      "status": "source_faithful_translation",
+      "note": "The source label does not specify a granuloma subtype."
+    },
+    {
+      "class_id": "K08",
+      "class_name_zh": "脂溢性角化",
+      "class_name_en": "Seborrheic keratosis",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68017492"
+    },
+    {
+      "class_id": "K09",
+      "class_name_zh": "色素痣",
+      "class_name_en": "Melanocytic nevus",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68009508"
+    },
+    {
+      "class_id": "K10",
+      "class_name_zh": "鳞状细胞癌",
+      "class_name_en": "Squamous cell carcinoma",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/squamous-cell-carcinoma"
+    },
+    {
+      "class_id": "K11",
+      "class_name_zh": "黄色肉芽肿",
+      "class_name_en": "Xanthogranuloma",
+      "status": "source_faithful_translation",
+      "note": "The source label does not specify a xanthogranuloma subtype."
+    },
+    {
+      "class_id": "K12",
+      "class_name_zh": "基底细胞癌",
+      "class_name_en": "Basal cell carcinoma",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/basal-cell-carcinoma"
+    },
+    {
+      "class_id": "K13",
+      "class_name_zh": "慢性炎症",
+      "class_name_en": "Chronic inflammation",
+      "status": "source_faithful_translation",
+      "note": "This is a non-specific pathological category rather than a single disease entity."
+    },
+    {
+      "class_id": "K14",
+      "class_name_zh": "疣状增生",
+      "class_name_en": "Verrucous hyperplasia",
+      "status": "source_faithful_translation"
+    },
+    {
+      "class_id": "K15",
+      "class_name_zh": "血管瘤",
+      "class_name_en": "Hemangioma",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68006391"
+    },
+    {
+      "class_id": "K16",
+      "class_name_zh": "黄色瘤",
+      "class_name_en": "Xanthoma",
+      "status": "standard_term_verified"
+    },
+    {
+      "class_id": "K17",
+      "class_name_zh": "囊肿",
+      "class_name_en": "Cyst",
+      "status": "source_faithful_translation",
+      "note": "The source label does not specify a cyst subtype."
+    },
+    {
+      "class_id": "K18",
+      "class_name_zh": "恶性黑色素瘤",
+      "class_name_en": "Malignant melanoma",
+      "status": "standard_term_verified"
+    },
+    {
+      "class_id": "K19",
+      "class_name_zh": "汗腺囊瘤",
+      "class_name_en": "Hidrocystoma",
+      "status": "standard_term_verified",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68018251"
+    },
+    {
+      "class_id": "K20",
+      "class_name_zh": "细胞乳头状增生",
+      "class_name_en": "Papillary epithelial hyperplasia",
+      "status": "source_faithful_translation",
+      "note": "This descriptive English translation preserves the original Chinese pathology label without replacing it with a more specific standardized diagnosis.",
+      "related_authority_url": "https://www.ncbi.nlm.nih.gov/medgen/90936"
+    },
+    {
+      "class_id": "K21",
+      "class_name_zh": "钙化上皮瘤",
+      "class_name_en": "Pilomatrixoma",
+      "status": "standard_term_verified",
+      "note": "Calcifying epithelioma of Malherbe is an established synonym.",
+      "authority_url": "https://www.ncbi.nlm.nih.gov/mesh/68018296"
+    }
+  ]
+}

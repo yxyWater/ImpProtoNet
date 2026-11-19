@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "model_id": "M2",
+  "model_name": "SupervisedTransferLogistic",
+  "backbone": "resnet18_imagenet1k_v1",
+  "fine_tune_backbone": true,
+  "supervised_sampling": {
+    "class_sampling": "uniform_balanced_cycles",
+    "patient_sampling": "uniform_without_replacement_cycles",
+    "image_sampling": "one_uniform_image_per_selected_patient",
+    "samples_per_epoch": "total_unique_training_patients"
+  },
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate_candidates": [0.0001, 0.0003],
+    "betas": [0.9, 0.999],
+    "epsilon": 1e-8,
+    "weight_decay": 0.0
+  },
+  "batch_size": 32,
+  "maximum_epochs": 50,
+  "validation_interval_epochs": 5,
+  "minimum_epochs": 10,
+  "early_stopping_patience_checks": 4,
+  "episode_classifier": {
+    "name": "multinomial_l2_logistic_regression",
+    "regularization_c_candidates": [0.01, 0.1, 1.0, 10.0],
+    "fit_intercept": true,
+    "feature_l2_normalization": false,
+    "class_weights": null,
+    "maximum_iterations": 100,
+    "tolerance": 1e-7
+  },
+  "hyperparameter_selection": {
+    "split_id": "split_01",
+    "common_across_shots": true,
+    "primary_metric": "mean_validation_accuracy",
+    "tie_breakers": ["mean_validation_macro_f1", "negative_mean_validation_loss"]
+  },
+  "learning_rate_schedule": "constant",
+  "gradient_clipping": null,
+  "resource_monitor_interval_epochs": 1,
+  "mixed_precision_on_cuda": true,
+  "training_seed": 20261004,
+  "seed_stability": {
+    "analysis_role": "supplementary",
+    "split_id": "split_01",
+    "training_seeds": [20261004, 20261005, 20261006]
+  }
+}

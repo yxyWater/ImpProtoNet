@@ -1,0 +1,26 @@
+{
+  "classes": [
+    {"class_id": "K00", "class_name": "分化成熟的脂肪组织", "category": "良性", "source_relpath": "良性/分化成熟的脂肪组织"},
+    {"class_id": "K01", "class_name": "毛细血管瘤", "category": "良性", "source_relpath": "良性/毛细血管瘤"},
+    {"class_id": "K02", "class_name": "皮脂腺瘤", "category": "良性", "source_relpath": "良性/皮脂腺瘤"},
+    {"class_id": "K03", "class_name": "皮脂腺癌", "category": "恶性", "source_relpath": "恶性/皮脂腺癌"},
+    {"class_id": "K04", "class_name": "睑板腺癌", "category": "恶性", "source_relpath": "恶性/睑板腺癌"},
+    {"class_id": "K05", "class_name": "纤维瘤", "category": "良性", "source_relpath": "良性/纤维瘤"},
+    {"class_id": "K06", "class_name": "翼状胬肉", "category": "良性", "source_relpath": "良性/翼状胬肉"},
+    {"class_id": "K07", "class_name": "肉芽肿", "category": "良性", "source_relpath": "良性/肉芽肿"},
+    {"class_id": "K08", "class_name": "脂溢性角化", "category": "良性", "source_relpath": "良性/脂溢性角化"},
+    {"class_id": "K09", "class_name": "色素痣", "category": "良性", "source_relpath": "良性/色素痣"},
+    {"class_id": "K10", "class_name": "鳞状细胞癌", "category": "恶性", "source_relpath": "恶性/鳞状细胞癌"},
+    {"class_id": "K11", "class_name": "黄色肉芽肿", "category": "良性", "source_relpath": "良性/黄色肉芽肿"},
+    {"class_id": "K12", "class_name": "基底细胞癌", "category": "恶性", "source_relpath": "恶性/基底细胞癌"},
+    {"class_id": "K13", "class_name": "慢性炎症", "category": "良性", "source_relpath": "良性/慢性炎症"},
+    {"class_id": "K14", "class_name": "疣状增生", "category": "良性", "source_relpath": "良性/疣状增生"},
+    {"class_id": "K15", "class_name": "血管瘤", "category": "良性", "source_relpath": "良性/血管瘤"},
+    {"class_id": "K16", "class_name": "黄色瘤", "category": "良性", "source_relpath": "良性/黄色瘤"},
+    {"class_id": "K17", "class_name": "囊肿", "category": "良性", "source_relpath": "良性/囊肿"},
+    {"class_id": "K18", "class_name": "恶性黑色素瘤", "category": "恶性", "source_relpath": "恶性/恶性黑色素瘤"},
+    {"class_id": "K19", "class_name": "汗腺囊瘤", "category": "良性", "source_relpath": "良性/汗腺囊瘤"},
+    {"class_id": "K20", "class_name": "细胞乳头状增生", "category": "良性", "source_relpath": "良性/细胞乳头状增生"},
+    {"class_id": "K21", "class_name": "钙化上皮瘤", "category": "良性", "source_relpath": "良性/钙化上皮瘤"}
+  ]
+}

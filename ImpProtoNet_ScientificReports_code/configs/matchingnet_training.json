@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "model_id": "M3",
+  "model_name": "MatchingNetFCE",
+  "reference": "Vinyals et al., Matching Networks for One Shot Learning, arXiv:1606.04080",
+  "backbone": "resnet18_imagenet1k_v1",
+  "fine_tune_backbone": true,
+  "support_query_encoder_shared": true,
+  "full_context_embedding": {
+    "enabled": true,
+    "support_embedding": "bidirectional_lstm_residual_sum",
+    "query_embedding": "augmented_hidden_attention_lstm_residual",
+    "query_processing_steps": 5
+  },
+  "matching": {
+    "similarity": "cosine",
+    "temperature": 1.0,
+    "learnable_temperature": false,
+    "class_probability": "sum_support_attention_by_one_hot_label",
+    "probability_epsilon": 1e-12
+  },
+  "support_order": {
+    "method": "deterministic_sha256_pseudorandom",
+    "seed": 20261004,
+    "identity_fields": ["episode_id", "patient_id", "image_id"],
+    "preserve_nested_relative_order": true
+  },
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate_candidates": [0.0001, 0.0003],
+    "betas": [0.9, 0.999],
+    "epsilon": 1e-8,
+    "weight_decay": 0.0
+  },
+  "learning_rate_selection": {
+    "split_id": "split_01",
+    "common_across_shots": true,
+    "primary_metric": "mean_validation_accuracy",
+    "tie_breakers": ["mean_validation_macro_f1", "negative_mean_validation_loss"]
+  },
+  "learning_rate_schedule": "constant",
+  "gradient_clipping": null,
+  "resource_monitor_interval_episodes": 100,
+  "mixed_precision_on_cuda": true,
+  "training_seed": 20261004,
+  "seed_stability": {
+    "analysis_role": "supplementary",
+    "split_id": "split_01",
+    "training_seeds": [20261004, 20261005, 20261006]
+  }
+}
